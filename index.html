@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+</head>
+<body>
+<header id="header">
+    <div id="header-time-name">
+        <div id="loginForm"><form id="inputForm"><input id="inputId" autocomplete="off" type="text" placeholder="write your name"></form></div>
+    </div>
+    <div id="clockDiv">
+        <h2 class="clock">00:00</h2>
+    </div>
+    <div id="weatherForm">
+        <div class="place"></div>
+        <div class="temp"></div>
+    </div>
+</header>
+<main id="main">
+    <!-- 사이드메뉴 -->
+    <section id="side-section">
+    <header id="side-menu-header"><button id="menu-header-btn">Menu</button></header>
+    <div id="sideForm">
+        <div id="side1">Main</div>
+        <div id="side2">My Technology</div>
+        <div id="side3">Project</div>
+    </div>
+    </section>
+
+    <!-- todoList -->
+    <section style="box-sizing: content-box; margin-right: 2em;">
+    <header><div id="todoList-header">to do List</div></header>
+    <div id="todoListForm">
+        <form id="todoForm">
+        <div id="inputDiv">
+            <input id="toDoInput" type="text" autocomplete="off" placeholder="write your to-do-List">
+        </div>
+        </form>
+        <div id="outPutDiv">
+        <ul id="todoListUl"></ul>
+        </div>
+    </div>
+    </section>
+
+    <!-- 기술 숙련도 -->
+    <section id="TechnologySection">
+        <header>
+            <div id="T-header">보유 기술 숙련도</div>
+        </header>
+        <section>
+        <div id="T-Div">
+            <div id="T1">
+                <img id="img1" class="img1" src="img/java.png">
+                <h3 class="showText">상</h3>
+            </div>
+            <div id="T2">
+                <img id="img2" class="img2" src="img/js.png">
+                <h3 class="showText2">중</h3>
+            </div>
+            <div id="T3">
+                <img id="img3" class="img3" src="img/css.png">
+                <h3 class="showText3">중</h3>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <!-- 프로젝트 소개 -->
+    <section id="ProjectSection">
+        <header>
+            <div id="P-header">참여 프로젝트 소개</div>
+        </header>
+        <section>
+        <div id="P-Div">
+            <div id="P1">
+                <img onclick="window.open('https://drive.google.com/file/d/1VBhsTSYHp5eMIVn7C5Ev2WnAAIIOBIu0/view?usp=sharing')" class="gif1" src="img/2Team.png" >
+            </div>
+            <div id="P2">
+                <img onclick="window.open('https://github.com/kdj9878/spring_git')" class="gif2" src="img/github2.png">
+            </div>
+            
+        </div>
+        </section>
+    </section>
+</main>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/todoList.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/mouseEvent.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
